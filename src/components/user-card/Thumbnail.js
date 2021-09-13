@@ -17,9 +17,9 @@ function Thumbnail() {
 					</span>
 				</p>
 			</div>
-			<div className="thumb__right">
+			<div className="thumb__right ml-2">
 				<div className="img__wrap p-1">
-					<img src="/images/yoga-thumb.png" width="300" alt="yoga" />
+					<img src="/images/yoga-thumb.png" alt="yoga" />
 				</div>
 			</div>
 		</Div>
@@ -40,6 +40,14 @@ const Div = styled.div`
 	.img__wrap {
 		border: 1px solid var(--pry-clr);
 		border-radius: 5px;
+
+		img {
+			width: 270px;
+
+			@media (max-width: 500px) {
+				width: 230px;
+			}
+		}
 	}
 
 	.contact {

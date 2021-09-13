@@ -18,7 +18,7 @@ function Wrapper() {
 export default Wrapper;
 
 const Div = styled.div`
-	min-height: 500px;
+	height: 400px;
 	background: url("/images/wavy.png") center/cover no-repeat fixed;
 	padding: 20px 0;
 `;

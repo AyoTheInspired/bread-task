@@ -16,4 +16,5 @@ export default CardMain;
 
 const Wrap = styled.div`
 	background: var(--pry-clr);
+	border: 1px solid #fff;
 `;

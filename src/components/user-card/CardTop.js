@@ -40,6 +40,8 @@ export default CardTop;
 const Wrap = styled.div`
 	background: #fff;
 	padding: 20px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
 
 	.img__wrap {
 		border: 1px solid var(--pry-clr);
