@@ -9,7 +9,7 @@
 		#7552ff 99.99%,
 		#7352ff 100%
 	);
-	--title-bg: #a088ff1a;
+	--title-bg: #a088ff0a;
 	--transition: all 0.2s linear;
 }
 
@@ -23,4 +23,15 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.fx-start {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }

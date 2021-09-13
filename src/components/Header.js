@@ -7,7 +7,7 @@ function Header() {
 		<Container fluid>
 			<Row>
 				<Main className="flexed p-4 mx-auto col">
-					<div className="title__container">
+					<div className="title__container col-lg-8">
 						<p className="mb-0 title text-center text-white">
 							Start your day with the <br /> goodness of yoga
 						</p>
@@ -35,13 +35,3 @@ const Main = styled.section`
 		font-size: 30px;
 	}
 `;
-
-/* Vector */
-
-// position: absolute;
-// left: -18.53%;
-// right: 71.89%;
-// top: -0.86%;
-// bottom: 0.22%;
-
-// border: 1px solid #7352FF;

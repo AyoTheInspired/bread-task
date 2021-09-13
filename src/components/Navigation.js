@@ -49,9 +49,10 @@ function Navigation() {
 export default Navigation;
 
 const Nav = styled.nav`
-	position: sticky;
+	position: sticky !important;
 	top: 0;
-	left: 0;
+	width: 100%;
+	z-index: 100;
 	box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
 	background: var(--linear-bg);
 	height: 50px;
