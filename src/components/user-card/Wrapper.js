@@ -7,7 +7,7 @@ function Wrapper() {
 	return (
 		<Container fluid>
 			<Row>
-				<Div className="flexed col">
+				<Div className="flexed col px-2">
 					<CardMain />
 				</Div>
 			</Row>

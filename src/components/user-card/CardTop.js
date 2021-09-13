@@ -26,6 +26,7 @@ function CardTop() {
 				</div>
 				<div className="right flex-col ">
 					<Button primary>Book Trial</Button>
+					<div className="divide my-2" />
 					<Button secondary>Contact Me</Button>
 				</div>
 			</div>

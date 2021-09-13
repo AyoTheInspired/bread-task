@@ -53,4 +53,9 @@ const Div = styled.div`
 	.contact {
 		color: var(--pry-clr);
 	}
+
+	.contact,
+	img {
+		cursor: pointer;
+	}
 `;
