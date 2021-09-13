@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa";
 
 const navItems = [
 	"Offerings",
@@ -11,13 +12,16 @@ const navItems = [
 ];
 
 function Navigation() {
+	const [showSidebar, setShowSidebar] = useState(false);
+
 	return (
 		<Nav className="flex-btw px-3 py-2">
 			<div className="nav__left">
 				<p className="nav__title mb-0 text-white">bre.ad/jane</p>
 			</div>
 
-			<div className="nav__right flexed col ">
+			<div
+				className={`${showSidebar && "show__sidebar"} nav__right flexed col`}>
 				<ul className="flexed my-auto py-1 ml-auto">
 					{navItems.map((item) => (
 						<li key={item} className="nav__right-item text-white">
@@ -29,8 +33,14 @@ function Navigation() {
 				</ul>
 			</div>
 
-			<div className="hamburger__container flexed">
-				<GiHamburgerMenu className="hamburger" />
+			<div
+				className="hamburger__container flexed"
+				onClick={() => setShowSidebar(!showSidebar)}>
+				{showSidebar ? (
+					<FaTimes className="hamburger" />
+				) : (
+					<GiHamburgerMenu className="hamburger" />
+				)}
 			</div>
 		</Nav>
 	);
@@ -100,9 +110,11 @@ const Nav = styled.nav`
 			left: 0;
 			right: 0;
 			width: 100vw;
-			background: red;
+			background: var(--linear-bg);
 			padding: 10px 0;
 			height: calc(100vh - 50px);
+			transform: translateX(-100%);
+			transition: var(--transition);
 		}
 
 		ul {
@@ -111,5 +123,9 @@ const Nav = styled.nav`
 			height: 100%;
 			justify-content: space-between !important;
 		}
+	}
+
+	.show__sidebar {
+		transform: translatex(0);
 	}
 `;
