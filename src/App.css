@@ -1,6 +1,5 @@
 :root {
 	--pry-clr: #7352ff;
-
 	--linear-bg: linear-gradient(
 		90deg,
 		#7352ff 0%,
@@ -10,7 +9,7 @@
 		#7552ff 99.99%,
 		#7352ff 100%
 	);
-
+	--title-bg: #a088ff1a;
 	--transition: all 0.2s linear;
 }
 
