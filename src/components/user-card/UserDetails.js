@@ -60,13 +60,17 @@ const Div = styled.div`
 	margin-top: 20px;
 
 	.socials {
-		font-size: 18px;
+		font-size: 15px;
 		cursor: pointer;
 	}
 
 	.divide {
 		border-top: 0.5px solid gray;
 		opacity: 0.5;
+	}
+
+	.user__bio {
+		font-size: 13px;
 	}
 
 	.locationWrap {
