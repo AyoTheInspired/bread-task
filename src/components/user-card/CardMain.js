@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import CardTop from "./user-card/CardTop";
-import Thumbnail from "./user-card/Thumbnail";
-import UserCardFooter from "./user-card/UserCardFooter";
+import CardTop from "./CardTop";
+import Thumbnail from "./Thumbnail";
+import UserCardFooter from "./UserCardFooter";
 
 function CardMain() {
 	return (

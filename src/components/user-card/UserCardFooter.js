@@ -5,7 +5,7 @@ import Button from "../Button";
 function UserCardFooter() {
 	return (
 		<Div className="">
-			<div className="wrap col-lg-10 mx-auto py-2">
+			<div className="wrap col mx-auto py-2">
 				<p className="footer__top">
 					Subscribe to my profile and never miss another update from me.
 				</p>
@@ -25,6 +25,8 @@ export default UserCardFooter;
 const Div = styled.div`
 	background: #fff;
 	padding: 20px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
 
 	.footer__top {
 		font-weight: bold;
