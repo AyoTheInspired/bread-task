@@ -1,8 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navigation from "./components/Navigation";
 
 function App() {
-	return <div className="app">THE BREAD TASK</div>;
+	return (
+		<div className="app">
+			<Navigation />
+		</div>
+	);
 }
 
 export default App;
