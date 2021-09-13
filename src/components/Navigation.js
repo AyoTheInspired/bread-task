@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const navItems = [
 	"Offerings",
@@ -15,8 +16,9 @@ function Navigation() {
 			<div className="nav__left">
 				<p className="nav__title mb-0 text-white">bre.ad/jane</p>
 			</div>
-			<div className="nav__right flexed col-lg-8">
-				<ul className="flexed my-auto py-1">
+
+			<div className="nav__right flexed col-lg-10">
+				<ul className="flexed my-auto py-1 ml-auto">
 					{navItems.map((item) => (
 						<li key={item} className="nav__right-item mx-3  text-white">
 							{item}
@@ -27,6 +29,10 @@ function Navigation() {
 				<div className="trial__el mr-3">
 					<p className="trial mb-0">Book Trial</p>
 				</div>
+			</div>
+
+			<div className="hamburger__container flexed d-lg-none">
+				<GiHamburgerMenu className="hamburger" />
 			</div>
 		</Nav>
 	);
@@ -45,6 +51,12 @@ const Nav = styled.nav`
 		list-style-type: none;
 		cursor: pointer;
 		font-weight: 500;
+	}
+
+	.hamburger {
+		color: #fff;
+		font-size: 20px;
+		cursor: pointer;
 	}
 
 	.trial {
