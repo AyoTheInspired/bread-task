@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../Button";
 
+import UserDetails from "./UserDetails";
+
 const userItems = ["Yoga", "Wellness", "Fitness"];
 
 function CardTop() {
 	return (
 		<Wrap>
-			<div className="userAvatar d-flex justify-content-between align-items-start bg-light p-4">
+			<div className="userAvatar d-flex justify-content-between align-items-start ">
 				<div className="left fx-start">
 					<div className="img__wrap">
 						<img src="/images/jane.png" width="100" alt="user" />
@@ -27,6 +29,8 @@ function CardTop() {
 					<Button secondary>Contact Me</Button>
 				</div>
 			</div>
+
+			<UserDetails />
 		</Wrap>
 	);
 }
@@ -34,6 +38,9 @@ function CardTop() {
 export default CardTop;
 
 const Wrap = styled.div`
+	background: #fff;
+	padding: 20px;
+
 	.img__wrap {
 		border: 1px solid var(--pry-clr);
 		padding: 5px;
@@ -43,9 +50,13 @@ const Wrap = styled.div`
 	.user__item {
 		font-size: 12px;
 		font-weight: bold;
-		padding: 2px 10px;
+		padding: 2px 8px;
 		border-radius: 25px;
 		cursor: pointer;
 		border: 1px solid var(--pry-clr);
+	}
+
+	.user__bio {
+		width: 85%;
 	}
 `;

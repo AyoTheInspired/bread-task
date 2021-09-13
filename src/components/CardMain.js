@@ -4,7 +4,7 @@ import CardTop from "./user-card/CardTop";
 
 function CardMain() {
 	return (
-		<Wrap className="p-4 bg-success col-lg-8 ">
+		<Wrap className="p-3 bg-success col-lg-8 ">
 			<CardTop />
 		</Wrap>
 	);

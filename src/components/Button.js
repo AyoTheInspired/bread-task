@@ -15,4 +15,9 @@ const StyledButton = styled.button`
 	border: ${({ primary }) => (primary ? "none" : "1px solid #7352ff")};
 	border-radius: 6px;
 	font-size: 16px;
+	white-space: nowrap;
+
+	@media (max-width: 500px) {
+		font-size: 13px;
+	}
 `;

@@ -2,14 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-
-const navItems = [
-	"Offerings",
-	"Other Links",
-	"Testimonials",
-	"Portfolio",
-	"Contact me",
-];
+import { navItems } from "../appData";
 
 function Navigation() {
 	const [showSidebar, setShowSidebar] = useState(false);
