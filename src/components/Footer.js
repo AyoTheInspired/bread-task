@@ -5,7 +5,7 @@ import { MdCopyright } from "react-icons/md";
 
 function Footer() {
 	return (
-		<Div className="p-4 flex-btw  flex-wrap">
+		<Div className="p-2 flex-btw  flex-wrap">
 			<div className="footer__left">
 				<div className="footer__left-title flexed mb-0 ">
 					<p className="mb-0">Powered by</p>
@@ -77,7 +77,7 @@ const Div = styled.div`
 		}
 
 		.footer__right {
-			width: 100%;
+			width: 100% !important;
 			margin-top: 30px;
 			display: flex;
 			justify-content: space-between;
@@ -86,6 +86,13 @@ const Div = styled.div`
 
 		.footer__right-item {
 			margin: 0px 8px !important;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.footer__right,
+		.footer__right-item {
+			font-size: 12px !important;
 		}
 	}
 `;
