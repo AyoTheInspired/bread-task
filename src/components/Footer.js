@@ -90,6 +90,10 @@ const Div = styled.div`
 	}
 
 	@media (max-width: 500px) {
+		.footer__right {
+			padding: 2px 15px;
+		}
+
 		.footer__right,
 		.footer__right-item {
 			font-size: 12px !important;
