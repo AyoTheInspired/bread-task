@@ -2,15 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 function CarouselItem({ properties }) {
-	const { picturePath, title, detail, scale } = properties;
+	const { picturePath, title, detail, scale, hide } = properties;
 
 	return (
 		<Div>
-			<div className="content__wrap">
+			<div className={`${hide ? "hide__item" : null} content__wrap mx-auto`}>
 				<img
 					width={`${scale ? "350px" : "230px"}`}
 					src={picturePath}
 					alt={title}
+					className="flexed"
 				/>
 				<div className="text text-white p-2">
 					<p className="mb-1 live text-center ">Live</p>
@@ -25,7 +26,7 @@ function CarouselItem({ properties }) {
 export default CarouselItem;
 
 const Div = styled.div`
-	margin: 30px auto;
+	margin: 20px auto;
 
 	.content__wrap {
 		padding: 8px;
@@ -60,9 +61,13 @@ const Div = styled.div`
 		.title,
 		.detail {
 			font-size: 12px;
+			opacity: 0.8;
+		}
+	}
+
+	@media (max-width: 800px) {
+		.hide__item {
+			display: none !important;
 		}
 	}
 `;
-
-// Friday - Online class
-// Aug 8, 9:00 AM to 11:00 AM IST

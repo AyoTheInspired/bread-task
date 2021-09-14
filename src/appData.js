@@ -34,17 +34,20 @@ export const carouselItems = [
 		title: "Friday - Online class",
 		detail: "Aug 8, 9:00 AM to 11:00 AM IST",
 		scale: false,
+		hide: true,
 	},
 	{
 		picturePath: "/images/carousel-mid.png",
 		title: "Friday - Online class",
 		detail: "Aug 8, 9:00 AM to 11:00 AM IST",
 		scale: true,
+		hide: false,
 	},
 	{
 		picturePath: "/images/carousel-right.png",
 		title: "Friday - Online class",
 		detail: "Aug 8, 9:00 AM to 11:00 AM IST",
 		scale: false,
+		hide: true,
 	},
 ];

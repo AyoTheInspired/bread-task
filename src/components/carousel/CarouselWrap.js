@@ -14,12 +14,12 @@ function Carousel() {
 						BROWSE ALL MY OFFERINGS
 					</h4>
 
-					<Wrap className="mx-auto col-lg-10 flex-btw">
+					<Wrap className="mx-auto col-lg-11  flex-btw">
 						{carouselItems.map((item, index) => {
 							return <CarouselItem key={index + 1} properties={item} />;
 						})}
 					</Wrap>
-					<div className="arrows flexed">
+					<div className="arrows flexed  mx-auto">
 						<span className="leftArrow flexed">
 							<GoArrowLeft />
 						</span>
@@ -44,7 +44,7 @@ const Section = styled.section`
 	/* min-height: 300px; */
 	background: black;
 	padding-top: 250px;
-	padding-bottom: 50px;
+	padding-bottom: 80px;
 	margin: 0 8px;
 
 	.header {
@@ -61,6 +61,10 @@ const Section = styled.section`
 		padding: 2px;
 		border: 1px solid #aaa;
 		border-radius: 50%;
+	}
+
+	@media (max-width: 768px) {
+		margin-top: 50px;
 	}
 `;
 
