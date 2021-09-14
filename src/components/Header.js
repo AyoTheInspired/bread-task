@@ -34,4 +34,10 @@ const Main = styled.section`
 		font-weight: bold;
 		font-size: 30px;
 	}
+
+	@media (max-width: 500px) {
+		.title {
+			font-size: 25px;
+		}
+	}
 `;

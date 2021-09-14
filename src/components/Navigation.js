@@ -100,6 +100,7 @@ const Nav = styled.nav`
 
 		.nav__right {
 			position: absolute;
+			z-index: 50;
 			top: 50px;
 			left: 0;
 			right: 0;

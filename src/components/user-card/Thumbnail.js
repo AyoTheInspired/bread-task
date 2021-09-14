@@ -58,4 +58,24 @@ const Div = styled.div`
 	img {
 		cursor: pointer;
 	}
+
+	@media (max-width: 500px) {
+		flex-wrap: wrap;
+
+		.contact {
+			display: none;
+		}
+
+		.thumb__advert {
+			font-size: 16px;
+		}
+
+		.img__wrap {
+			margin-top: 15px;
+
+			img {
+				width: 290px;
+			}
+		}
+	}
 `;

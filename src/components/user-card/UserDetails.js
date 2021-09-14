@@ -86,4 +86,14 @@ const Div = styled.div`
 			border-radius: 8px;
 		}
 	}
+
+	@media (max-width: 500px) {
+		.locationValue {
+			font-size: 10px !important;
+		}
+
+		.socials {
+			font-size: 13px;
+		}
+	}
 `;

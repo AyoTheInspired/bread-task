@@ -12,7 +12,7 @@ function UserCardFooter() {
 				<input
 					type="text"
 					placeholder="Enter your Email"
-					className="col-8 mr-4 py-1 "
+					className="col mr-4 py-1 "
 				/>
 				<Button primary>Subscribe</Button>
 			</div>
@@ -49,5 +49,11 @@ const Div = styled.div`
 
 	input::placeholder {
 		font-size: 13px;
+	}
+
+	@media (max-width: 500px) {
+		input {
+			width: 60%;
+		}
 	}
 `;

@@ -38,7 +38,7 @@ export default CardTop;
 
 const Wrap = styled.div`
 	background: #fff;
-	padding: 20px;
+	padding: 10px 12px;
 	border-top-right-radius: 6px;
 	border-top-left-radius: 6px;
 
@@ -59,5 +59,12 @@ const Wrap = styled.div`
 
 	.user__bio {
 		width: 85%;
+	}
+
+	@media (max-width: 500px) {
+		.user__item {
+			font-size: 9px;
+			padding: 2px 4px;
+		}
 	}
 `;

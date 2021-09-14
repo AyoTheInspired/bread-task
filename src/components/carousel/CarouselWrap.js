@@ -9,12 +9,12 @@ function Carousel() {
 	return (
 		<StyledContainer fluid>
 			<Row>
-				<Section className="flex-col col">
+				<Section className="flex-col col mx-auto">
 					<h4 className="mb-2 header text-center text-white">
 						BROWSE ALL MY OFFERINGS
 					</h4>
 
-					<Wrap className="mx-auto col-lg-11  flex-btw">
+					<Wrap className="mx-auto col-lg-11 flex-btw">
 						{carouselItems.map((item, index) => {
 							return <CarouselItem key={index + 1} properties={item} />;
 						})}
@@ -41,7 +41,6 @@ const StyledContainer = styled(Container)`
 `;
 
 const Section = styled.section`
-	/* min-height: 300px; */
 	background: black;
 	padding-top: 250px;
 	padding-bottom: 80px;
@@ -65,6 +64,11 @@ const Section = styled.section`
 
 	@media (max-width: 768px) {
 		margin-top: 50px;
+		padding-bottom: 30px;
+
+		.header {
+			margin-top: 30px;
+		}
 	}
 `;
 

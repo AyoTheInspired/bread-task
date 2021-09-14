@@ -6,7 +6,7 @@ import UserCardFooter from "./UserCardFooter";
 
 function CardMain() {
 	return (
-		<Wrap className="p-2  col-lg-6 col-md-8">
+		<Wrap className="p-2 col-lg-6 col-md-8">
 			<CardTop />
 			<Thumbnail />
 			<UserCardFooter />

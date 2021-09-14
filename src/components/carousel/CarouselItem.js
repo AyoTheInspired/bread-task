@@ -69,5 +69,9 @@ const Div = styled.div`
 		.hide__item {
 			display: none !important;
 		}
+
+		img {
+			width: 300px;
+		}
 	}
 `;
