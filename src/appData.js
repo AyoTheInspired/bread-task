@@ -27,3 +27,24 @@ export const userData = {
 
 	languages: ["English", "Hindi", "Punjabi"],
 };
+
+export const carouselItems = [
+	{
+		picturePath: "/images/carousel-left.png",
+		title: "Friday - Online class",
+		detail: "Aug 8, 9:00 AM to 11:00 AM IST",
+		scale: false,
+	},
+	{
+		picturePath: "/images/carousel-mid.png",
+		title: "Friday - Online class",
+		detail: "Aug 8, 9:00 AM to 11:00 AM IST",
+		scale: true,
+	},
+	{
+		picturePath: "/images/carousel-right.png",
+		title: "Friday - Online class",
+		detail: "Aug 8, 9:00 AM to 11:00 AM IST",
+		scale: false,
+	},
+];
