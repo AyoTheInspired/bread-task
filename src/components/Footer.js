@@ -5,7 +5,7 @@ import { MdCopyright } from "react-icons/md";
 
 function Footer() {
 	return (
-		<Div className="p-2 flex-btw  flex-wrap">
+		<Div className=" flex-btw  flex-wrap">
 			<div className="footer__left">
 				<div className="footer__left-title flexed mb-0 ">
 					<p className="mb-0">Powered by</p>
@@ -46,6 +46,7 @@ export default Footer;
 
 const Div = styled.div`
 	background: var(--pry-clr);
+	padding: 15px 20px;
 
 	.footer__left-title {
 		font-size: 20px;
@@ -91,7 +92,7 @@ const Div = styled.div`
 
 	@media (max-width: 500px) {
 		.footer__right {
-			padding: 2px 15px;
+			padding: 18px 15px;
 		}
 
 		.footer__right,
