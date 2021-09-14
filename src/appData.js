@@ -51,3 +51,12 @@ export const carouselItems = [
 		hide: true,
 	},
 ];
+
+export const footerLeftIcons = [
+	<FaInstagram />,
+	<FaFacebookF />,
+	<FaTwitter />,
+	<GrLinkedinOption />,
+];
+
+export const footerRightItems = ["Terms", "Privacy", "About"];
