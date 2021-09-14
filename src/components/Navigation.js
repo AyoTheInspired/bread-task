@@ -115,7 +115,7 @@ const Nav = styled.nav`
 		ul {
 			padding: 30px;
 			flex-direction: column;
-			height: 100%;
+			height: 80%;
 			justify-content: space-between !important;
 		}
 	}
