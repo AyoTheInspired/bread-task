@@ -17,7 +17,10 @@ function Navigation() {
 				className={`${showSidebar && "show__sidebar"} nav__right flexed col`}>
 				<ul className="flexed my-auto py-1 ml-auto">
 					{navItems.map((item) => (
-						<li key={item} className="nav__right-item text-white">
+						<li
+							key={item}
+							className="nav__right-item text-white"
+							onClick={() => setShowSidebar(false)}>
 							{item}
 						</li>
 					))}
@@ -63,7 +66,7 @@ const Nav = styled.nav`
 
 	.hamburger {
 		color: #fff;
-		font-size: 20px;
+		font-size: 22px;
 		cursor: pointer;
 	}
 
