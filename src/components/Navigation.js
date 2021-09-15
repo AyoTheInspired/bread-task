@@ -25,7 +25,9 @@ function Navigation() {
 						</li>
 					))}
 
-					<p className="trial mb-0">Book Trial</p>
+					<p className="trial mb-0" onClick={() => setShowSidebar(false)}>
+						Book Trial
+					</p>
 				</ul>
 			</div>
 
@@ -118,8 +120,12 @@ const Nav = styled.nav`
 		ul {
 			padding: 30px;
 			flex-direction: column;
-			height: 80%;
-			justify-content: space-between !important;
+			height: 100%;
+			justify-content: flex-start;
+
+			li {
+				margin-bottom: 20px !important;
+			}
 		}
 	}
 
